@@ -9,16 +9,16 @@
 
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-      background: #f8f5f0;
-      color: #3a3a3a;
+      background: #1a1a2e;
+      color: #e8e6f0;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
     }
 
     header {
-      background: #fff;
-      border-bottom: 1px solid #e0dcd6;
+      background: rgba(255,255,255,0.05);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
       padding: 0 2rem;
       height: 54px;
       display: flex;
@@ -28,7 +28,7 @@
     header h1 {
       font-size: 1.1rem;
       font-weight: 700;
-      color: #2c2c2c;
+      color: #fff;
       letter-spacing: -0.02em;
     }
 
@@ -42,14 +42,14 @@
     .company-name {
       font-size: 2rem;
       font-weight: 700;
-      color: #2c2c2c;
+      color: #fff;
       letter-spacing: -0.03em;
       margin-bottom: 0.5rem;
     }
 
     .company-type {
       font-size: 0.85rem;
-      color: #aaa;
+      color: rgba(255,255,255,0.35);
       text-transform: uppercase;
       letter-spacing: 0.08em;
       margin-bottom: 2.5rem;
@@ -58,7 +58,7 @@
     .divider {
       width: 40px;
       height: 3px;
-      background: #2c3e6b;
+      background: rgba(255,255,255,0.2);
       border-radius: 2px;
       margin-bottom: 2.5rem;
     }
@@ -66,13 +66,13 @@
     .about {
       font-size: 1.05rem;
       line-height: 1.7;
-      color: #555;
+      color: rgba(255,255,255,0.6);
       margin-bottom: 3rem;
     }
 
     .product-card {
-      background: #fff;
-      border: 1px solid #e8e4de;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
       border-radius: 12px;
       padding: 1.5rem;
       display: flex;
@@ -81,12 +81,12 @@
       gap: 1rem;
       margin-bottom: 3rem;
       text-decoration: none;
-      transition: border-color 0.15s, box-shadow 0.15s;
+      transition: background 0.15s, border-color 0.15s;
     }
 
     .product-card:hover {
-      border-color: #c8c4be;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+      background: rgba(255,255,255,0.1);
+      border-color: rgba(255,255,255,0.2);
     }
 
     .product-info { flex: 1; }
@@ -94,20 +94,20 @@
     .product-name {
       font-size: 1.1rem;
       font-weight: 700;
-      color: #2c2c2c;
+      color: #fff;
       margin-bottom: 4px;
     }
 
     .product-desc {
       font-size: 0.88rem;
-      color: #888;
+      color: rgba(255,255,255,0.45);
       line-height: 1.5;
     }
 
     .product-link {
       font-size: 0.82rem;
       font-weight: 600;
-      color: #2c3e6b;
+      color: rgba(255,255,255,0.5);
       white-space: nowrap;
       display: flex;
       align-items: center;
@@ -116,22 +116,22 @@
 
     .contact {
       font-size: 0.88rem;
-      color: #888;
+      color: rgba(255,255,255,0.4);
     }
 
     .contact a {
-      color: #2c3e6b;
+      color: rgba(255,255,255,0.7);
       text-decoration: none;
     }
 
     .contact a:hover { text-decoration: underline; }
 
     footer {
-      border-top: 1px solid #e0dcd6;
+      border-top: 1px solid rgba(255,255,255,0.07);
       padding: 1.25rem 2rem;
       text-align: center;
       font-size: 0.75rem;
-      color: #bbb;
+      color: rgba(255,255,255,0.2);
     }
   </style>
 </head>
@@ -168,7 +168,7 @@
     </a>
 
     <div class="contact">
-      Contact: <a href="mailto:mark@briggsroad.com">mark@briggsroad.com</a>
+      Contact: <a href="mailto:hello@briggsroad.com">hello@briggsroad.com</a>
     </div>
   </main>
 
