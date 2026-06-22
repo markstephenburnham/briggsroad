@@ -13,7 +13,7 @@ Static site for Briggs Road LLC, hosted on GitHub Pages.
    git add index.html README.md
    git commit -m "initial"
    git branch -M main
-   git remote add origin https://github.com/YOUR_USERNAME/briggsroad.git
+   git remote add origin https://github.com/markstephenburnham/briggsroad.git
    git push -u origin main
    ```
 3. In the GitHub repo: **Settings → Pages → Source** → Deploy from branch → `main` / `root` → Save
@@ -46,4 +46,29 @@ GitHub Pages redeploys automatically within ~30 seconds.
 
 ## Email
 
-Set up forwarding for `mark@briggsroad.com` (or `hello@briggsroad.com`) via your domain registrar or Cloudflare Email Routing so mail lands in your inbox.
+Email is handled via **ImprovMX** (free tier) for both receiving and sending.
+
+### Setup
+
+1. Sign up at [improvmx.com](https://improvmx.com), add `briggsroad.com`
+2. Add the MX records ImprovMX gives you in Namecheap Advanced DNS (replace any existing MX records)
+3. In ImprovMX, create an alias: `mark` → your personal Gmail
+4. In ImprovMX, go to **SMTP credentials** → create a password for `mark@briggsroad.com`
+
+### Sending from Gmail
+
+1. Gmail → Settings → Accounts → **Send mail as** → Add another email address
+2. Enter `mark@briggsroad.com`
+3. On the SMTP config screen:
+   - SMTP Server: `smtp.improvmx.com`
+   - Port: `587`
+   - Username: `mark@briggsroad.com`
+   - Password: the SMTP password from ImprovMX
+   - Secured connection: TLS
+4. Gmail sends a verification email to `mark@briggsroad.com` → it forwards to your Gmail → click the link
+
+To send as `mark@briggsroad.com`, use the **From** dropdown when composing in Gmail.
+
+### Other aliases
+
+Add more aliases in ImprovMX as needed (e.g. `hello` → your Gmail). Each alias receives mail automatically. To *send* from a new alias, repeat the Gmail "Send mail as" steps with the new address.
